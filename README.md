@@ -1,75 +1,57 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
-# Project Name
+For example, the square matrix  is shown below:
 
-> Description the project.
+1 2 3
+4 5 6
+9 8 9  
+The left-to-right diagonal = . The right to left diagonal = . Their absolute difference is .
 
+Function description
 
-## Built With
+Complete the  function in the editor below.
 
-- Major languages
-- Frameworks
-- Technologies used
+diagonalDifference takes the following parameter:
 
-## Live Demo (if available)
+int arr[n][m]: an array of integers
+Return
 
-[Live Demo Link](https://livedemo.com)
+int: the absolute diagonal difference
+Input Format
 
+The first line contains a single integer, , the number of rows and columns in the square matrix .
+Each of the next  lines describes a row, , and consists of  space-separated integers .
 
-## Getting Started
+Constraints
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Output Format
 
+Return the absolute difference between the sums of the matrix's two diagonals as a single integer.
 
-To get a local copy up and running follow these simple example steps.
+Sample Input
 
-### Prerequisites
+3
+11 2 4
+4 5 6
+10 8 -12
+Sample Output
 
-### Setup
+15
+Explanation
 
-### Install
+The primary diagonal is:
 
-### Usage
+11
+   5
+     -12
+Sum across the primary diagonal: 11 + 5 - 12 = 4
 
-### Run tests
+The secondary diagonal is:
 
-### Deployment
+     4
+   5
+10
+Sum across the secondary diagonal: 4 + 5 + 10 = 19
+Difference: |4 - 19| = 15
 
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+Note: |x| is the absolute value of x
